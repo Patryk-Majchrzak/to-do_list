@@ -37,7 +37,7 @@
         let newTasks = ""
 
         tasks.forEach((task) => {newTasks +=
-                `<li class="list__item ${!task.done ? "list__item--done" : ""}">
+                `<li class="list__item ${task.done ? "list__item--done" : ""}">
                     <button class="list__button list__button--toggleDone js-toggleDoneButton"></button>
                         ${task.content}
                     <button class="list__button list__button--remove js-removeButton"></button> 
