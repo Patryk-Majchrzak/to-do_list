@@ -5,6 +5,8 @@
     align-items: center;
     margin-bottom: 10px;
     grid-gap: 10px;
+    padding:5px;
+    border-bottom: 2px solid #ddd;
 }
 
 .list__button{
@@ -37,6 +39,6 @@
     background-color: hsl(124, 83%, 55%);
 }
 
-.list__listItem--done{
+.list__item--done{
     text-decoration: line-through;
 }
