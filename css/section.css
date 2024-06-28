@@ -3,13 +3,16 @@
     margin-bottom: 10px;
 }
 
-.section__header{
-    margin-bottom:2px;    
+.section__header{   
     border-bottom: 2px solid #ddd;
-    padding: 15px;
+    padding: 5px;
     padding-left: 25px;
 }
 
 .section__body{
-    padding: 15px;
+    padding: 25px;
+}
+
+.section__body--withList{
+    padding-left: 0;
 }
