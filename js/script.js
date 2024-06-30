@@ -82,7 +82,7 @@
     const listenFormSubmit = () => {
         const form = document.querySelector(".js-form");
 
-        form.addEventListener("click", onFormSubmit);
+        form.addEventListener("submit", onFormSubmit);
     };
 
     const init = () => {
