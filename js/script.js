@@ -37,11 +37,11 @@
         let newTasks = ""
 
         tasks.forEach((task) => {newTasks +=
-                `<li class="list__item ${task.done ? "list__item--done" : ""}">
+                `<li class="list__item">
                     <button class="list__button list__button--toggleDone js-toggleDoneButton"> 
                         ${task.done ? "✔" : ""} 
                     </button>
-                        ${task.content}
+                        <span class=${task.done ? "list__item--done" : ""}>${task.content}</span>
                     <button class="list__button list__button--remove js-removeButton"> 
                         🗑 
                     </button> 
