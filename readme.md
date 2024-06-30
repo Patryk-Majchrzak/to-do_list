@@ -8,11 +8,15 @@ Hi! Welcome to my todo list, where you can create your list of tasks that can he
 
 ## Details for users
 1. Website is available only in polish (I am about to add language selection in thee future, so it will be available in english as well)
-2. You can add new task to your to-do list by selecting the input with "Co jest do zrobienia?" (What needs to be done) text and click button with "Dodaj zadanie" (add task). Task will go to section called "lista zadań" (tasks list)
+2. After starting the website for the first time, you should see two example tasks called "zrobić coś" (do something) and "zrobić coś innego" (do something else). "Zrobić coś innego" should be crossed out as it is marked as done. You should see same two tasks after refreshing the page.
+
+<img src="for_readme/startingTasks.png">
+
+3. You can add new task to your to-do list by selecting the input with "Co jest do zrobienia?" (What needs to be done) text and click button with "Dodaj zadanie" (add task). Task will go to section called "lista zadań" (tasks list)
 
 <img src="for_readme/addNewTaskAnimation.gif">
 
-3. You can select existing tasks by
+4. You can select existing tasks by
 - clicking green button which changes tasks status from not done to done and from done to not done
 
 <img src="for_readme/toggleDoneAnimation.gif"> 
