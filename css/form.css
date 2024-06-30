@@ -15,3 +15,11 @@
     padding:10px;
     border: none;
 }
+
+.form__button:hover{
+    background-color: hsl(180, 100%, 35%);
+}
+
+.form__button:active{
+    background-color: hsl(180, 100%, 45%);
+}
