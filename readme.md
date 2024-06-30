@@ -1,7 +1,7 @@
 # to-do list
 
 ## Demo
-https://github.com/Patryk-Majchrzak/tasks_list.git
+https://patryk-majchrzak.github.io/tasks_list/
 
 ## Description
 Hi! Welcome to my todo list, where you can create your list of tasks that can help you organize your work. 😊 Below som information for users how to navigate through the website and information for developers about code itself. So, what are you waiting for? Click th link in the demo and try it out 😉
