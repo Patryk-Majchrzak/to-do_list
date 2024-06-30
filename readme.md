@@ -1,4 +1,4 @@
-# to-do list
+# TO-DO LIST
 
 ## Demo
 https://patryk-majchrzak.github.io/tasks_list/
