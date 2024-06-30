@@ -1,7 +1,16 @@
 {
     const welcome = () => console.log("Hello there!");   
    
-    const tasks = [];
+    const tasks = [
+        {
+            content:"zrobić coś",
+            done:false
+        },
+        {
+            content:"zrobić coś innego",
+            done:true,
+        },
+    ];
 
     const removeTask = (index) => {
         tasks.splice(index, 1);
@@ -87,7 +96,8 @@
 
     const init = () => {
         welcome();
-        listenFormSubmit();;
+        listenFormSubmit();
+        render();
     };
 
     init();
