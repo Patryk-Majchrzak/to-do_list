@@ -9,6 +9,18 @@
     padding-left: 25px;
 }
 
+.section__header--withButtons{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items:center;
+}
+
+@media(max-width:992px) {
+    .section__header--withButtons{
+        grid-template-columns: 1fr;
+    }
+}
+
 .section__body{
     padding: 25px;
 }

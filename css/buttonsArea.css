@@ -1,0 +1,31 @@
+.buttonsArea{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.buttonsArea__button{
+    color: hsl(180, 53%, 32%);
+    border:none;
+    background: none;
+    transition: color 0.4s;
+}
+
+@media(max-width:992px) {
+    .buttonsArea__button{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.buttonsArea__button:hover{
+    cursor: pointer;
+    color: hsl(238, 65%, 23%);
+}
+
+.buttonsArea__button:active{
+    color: hsl(233, 91%, 9%);
+}
+
+.buttonsArea__button:disabled{
+    color: #bbb;
+}
