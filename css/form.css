@@ -20,10 +20,12 @@
     color:white;
     padding:10px;
     border: none;
+    transition: background 1s, transform 1.5s;
 }
 
 .form__button:hover{
     background-color: hsl(180, 100%, 35%);
+    transform: scale(1.2);
 }
 
 .form__button:active{
