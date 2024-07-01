@@ -112,7 +112,7 @@
             </button>
             <button class="js-setAllDone buttonsArea__button">
                 Ukończ wszystkie
-            <button>
+            </button>
             `
         };
 
