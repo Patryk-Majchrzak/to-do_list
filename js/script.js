@@ -109,10 +109,9 @@
             <button ${tasks.every(({done}) => done) ? "disabled" : ""} class="js-setAllDone buttonsArea__button">
                 Ukończ wszystkie
             </button>`
+            listenHideDoneButtonEvent();
+            listenSetAllDoneButtonEvent();
         };
-
-        listenHideDoneButtonEvent();
-        listenSetAllDoneButtonEvent();
     };
 
     const render = () => {
