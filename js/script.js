@@ -13,7 +13,10 @@
     ];
 
     const removeTask = (index) => {
-        tasks.splice(index, 1);
+        tasks = [
+        ...tasks.slice(0, index),
+        ...tasks.slice(index + 1),
+        ];
         render();
     };
 
@@ -21,8 +24,8 @@
         tasks = [
             ...tasks.slice(0, index),
             {...tasks[index], done:!tasks[index].done},
-            ...tasks.slice(index + 1)
-        ]
+            ...tasks.slice(index + 1),
+        ];
         render();
     };
 
@@ -74,7 +77,6 @@
                 done: false,
             },
         ];
-
         render();
     };
 
