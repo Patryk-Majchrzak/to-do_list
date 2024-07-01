@@ -22,6 +22,20 @@
         render();
     };
 
+    const listenSetAllDoneButtonEvent = () => {
+        const setAllDone = document.querySelector(".js-setAllDone");
+
+        setAllDone.addEventListener("click", setAllTasksDone);
+    };
+
+    const setAllTasksDone = () => {
+        tasks=tasks.map(task => ({
+            ...task,
+            done:true,
+        }));
+        render();
+    };
+
     const listenHideDoneButtonEvent = () => {
         const toggleHideDone = document.querySelector(".js-toggleHideDone");
 
@@ -33,7 +47,6 @@
 
         hideDone = !hideDone;
         buttonText.innerText = hideDone ? "Pokaż" : "Ukryj";
-        console.log(hideDone);    
             
         render();
     }
@@ -130,6 +143,7 @@
         welcome();
         listenFormSubmit();
         listenHideDoneButtonEvent();
+        listenSetAllDoneButtonEvent();
         render();
     };
 
