@@ -1,7 +1,7 @@
 {
     const welcome = () => console.log("Hello there!");   
    
-    const tasks = [
+    let tasks = [
         {
             content:"zrobić coś",
             done:false
@@ -63,10 +63,13 @@
     };
 
     const addNewTask = (newTask) => {
-        tasks.push({
-            content:newTask,
-            done:false,
-        });
+        tasks = [
+            ...tasks,
+            {
+                content: newTask,
+                done: false,
+            },
+        ];
 
         render();
     };
