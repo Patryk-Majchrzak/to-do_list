@@ -13,14 +13,6 @@
     ];
     let hideDone = false;
 
-    const removeTask = (index) => {
-        tasks = [
-        ...tasks.slice(0, index),
-        ...tasks.slice(index + 1),
-        ];
-        render();
-    };
-
     const listenSetAllDoneButtonEvent = () => {
         const setAllDone = document.querySelector(".js-setAllDone");
 
@@ -48,7 +40,15 @@
         buttonText.innerText = hideDone ? "Pokaż" : "Ukryj";
             
         render();
-    }
+    };
+
+    const removeTask = (index) => {
+        tasks = [
+        ...tasks.slice(0, index),
+        ...tasks.slice(index + 1),
+        ];
+        render();
+    };
 
     const toggleDone = (index) => {
         tasks = [
