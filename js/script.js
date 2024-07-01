@@ -13,12 +13,6 @@
     ];
     let hideDone = false;
 
-    const listenSetAllDoneButtonEvent = () => {
-        const setAllDone = document.querySelector(".js-setAllDone");
-
-        setAllDone.addEventListener("click", setAllTasksDone);
-    };
-
     const setAllTasksDone = () => {
         tasks=tasks.map(task => ({
             ...task,
@@ -27,19 +21,21 @@
         render();
     };
 
+    const listenSetAllDoneButtonEvent = () => {
+        const setAllDone = document.querySelector(".js-setAllDone");
+
+        setAllDone.addEventListener("click", setAllTasksDone);
+    };
+
+    const hideDoneTasks = () => {
+        hideDone = !hideDone;
+        render();
+    };
+
     const listenHideDoneButtonEvent = () => {
         const toggleHideDone = document.querySelector(".js-toggleHideDone");
 
         toggleHideDone.addEventListener("click", hideDoneTasks);
-    };
-
-    const hideDoneTasks = () => {
-        let buttonText = document.querySelector(".js-toggleHideDoneButtonText")
-
-        hideDone = !hideDone;
-        buttonText.innerText = hideDone ? "Pokaż" : "Ukryj";
-            
-        render();
     };
 
     const removeTask = (index) => {
@@ -105,15 +101,14 @@
 
         if(!tasks.length){
             buttonsContainer.innerHTML = ""
-        } else{
+        } else {
             buttonsContainer.innerHTML = 
             `<button class="js-toggleHideDone buttonsArea__button">
-                <span class=js-toggleHideDoneButtonText>Ukryj</span> ukończone
+                ${hideDone ? "Pokaż" : "Ukryj"} ukończone
             </button>
-            <button class="js-setAllDone buttonsArea__button">
+            <button ${tasks.every(({done}) => done) ? "disabled" : ""} class="js-setAllDone buttonsArea__button">
                 Ukończ wszystkie
-            </button>
-            `
+            </button>`
         };
 
         listenHideDoneButtonEvent();
